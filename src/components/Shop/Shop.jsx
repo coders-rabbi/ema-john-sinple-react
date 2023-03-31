@@ -13,12 +13,22 @@ const Shop = () => {
             .then(res => res.json())
             .then(data => setProducts(data));
     }, [])
-    
-    useEffect( () =>{
+
+
+    useEffect(() => {
         const storedCart = getShoppingCart();
-        console.log(storedCart)
-    },[])
-    const handleAddToCart = (product) =>{
+        // step 1: get the id
+        for (const id in storedCart) {
+            console.log(id);
+            //step 2: get the product by using id
+            const addedProduct = products.find(product => product.id === id);
+            console.log(addedProduct)
+            // const quantity = 
+        }
+    }, [products])
+
+
+    const handleAddToCart = (product) => {
         const newCart = [...cart, product];
         setCart(newCart);
         addToDb(product.id)
@@ -27,7 +37,7 @@ const Shop = () => {
         <div className='shop-container'>
             <div className='products-container'>
                 {
-                    products.map( product => <Products
+                    products.map(product => <Products
                         key={product.id}
                         product={product}
                         handleAddToCart={handleAddToCart}
