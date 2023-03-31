@@ -1,0 +1,14 @@
+.cart{
+    background-color: rgba(255, 153, 0, 0.3);;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    padding: 20px;
+    margin-top: 100px;
+    border-radius: 10px;
+    height: 350px;
+}
+.products-summary-info{
+    text-align: left;
+    margin-left: 15px;
+}
