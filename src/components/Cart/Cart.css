@@ -12,3 +12,19 @@
     text-align: left;
     margin-left: 15px;
 }
+
+.btn-clear-cart{
+    width: 100%;
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 8px;
+    background: #FF3030;
+    color: #fff;
+}
+
+.clear-btn-icon{
+    color: #fff;
+    font-size: 18px;
+}
