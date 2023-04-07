@@ -1,14 +1,28 @@
-.shop-container{
+.shop-container {
     /* width: 100%; */
     max-width: 100%;
     display: grid;
     grid-template-columns: 4fr 1fr;
 }
-.products-container{
+
+.products-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    justify-items
-    : center;
+    justify-items: center;
     gap: 30px;
     padding: 100px;
 }
+.proceed-link{
+    text-decoration: none;
+}
+
+.btn-proceed {
+    background: #FF9900;
+    border-radius: 4px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+

@@ -6,7 +6,7 @@
     padding: 20px;
     margin-top: 100px;
     border-radius: 10px;
-    height: 350px;
+    height: 45vh;
 }
 .products-summary-info{
     text-align: left;
@@ -24,7 +24,7 @@
     color: #fff;
 }
 
-.clear-btn-icon{
+.{
     color: #fff;
     font-size: 18px;
 }
